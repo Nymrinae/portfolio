@@ -1,0 +1,16 @@
+body::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow: auto;
+    }
+}
+
+@media screen and (height: 1080px) {
+    body {
+        overflow: hidden;
+    }
+}
