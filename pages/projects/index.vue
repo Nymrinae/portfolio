@@ -20,7 +20,7 @@
               <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100" style="height: 224px">
                   <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1" v-html="project.subtitle" />
                   <h1 class="title-font text-lg font-medium text-white mb-3" v-html="project.title" />
-                  <p class="leading-relaxed" v-html="$t(project.description)" />
+                  <p class="leading-relaxed text-justify" v-html="$t(project.description)" />
               </div>
             </div>
         </div>
@@ -46,7 +46,7 @@ export default class Projects extends Vue {
   private readonly projects: Array<Project> = [
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'EPITECH_PROJECTS_DESC',
+      description: 'PROJECTS.EPITECH_PROJECTS_DESC',
       isEpitechProject: true,
       link: '',
       title: 'EPITECH Projects',
@@ -54,7 +54,7 @@ export default class Projects extends Vue {
     },
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'EPICTURE_DESC',
+      description: 'PROJECTS.EPICTURE_DESC',
       isEpitechProject: true,
       link: '',
       title: 'Epicture',
@@ -62,7 +62,7 @@ export default class Projects extends Vue {
     },
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'AREA_DESC',
+      description: 'PROJECTS.AREA_DESC',
       isEpitechProject: true,
       link: '',
       title: 'Action REAction (AREA)',
@@ -70,7 +70,7 @@ export default class Projects extends Vue {
     },
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'SERAPHAE_DESC',
+      description: 'PROJECTS.SERAPHAE_DESC',
       link: '',
       isEpitechProject: false,
       title: 'Seraphae',
@@ -78,7 +78,7 @@ export default class Projects extends Vue {
     },
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'DOFUS_CB_DESC',
+      description: 'PROJECTS.DOFUS_CB_DESC',
       isEpitechProject: false,
       link: '',
       title: 'Dofus Charater Builder',
@@ -86,7 +86,7 @@ export default class Projects extends Vue {
     },
     {
       background: 'https://dummyimage.com/600x360',
-      description: 'PORTFOLIO_DESC',
+      description: 'PROJECTS.PORTFOLIO_DESC',
       isEpitechProject: false,
       link: '',
       title: 'Portfolio',

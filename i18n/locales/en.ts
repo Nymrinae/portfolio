@@ -24,7 +24,7 @@ export default {
     EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects from 1st Year to 3rd year.',
     PORTFOLIO_DESC: 'The portfolio you\'re currently reading.',
     SERAPHAE_DESC: 'Multi-purpose (moderation, fun, games, music) Discord Bot using Discord.js.',
-    TITLE: 'Divers projets que j\'ai réalisé',
+    TITLE: 'Some things I\'ve built',
   },
   SWITCH_LANG: 'Switch to'
 }
