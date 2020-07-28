@@ -17,8 +17,7 @@ export default {
     PROJECTS: 'Projets'
   },
   PROJECTS: {
-    AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (IFTTT).',
-    DESC: 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz',
+    AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (comme Zapier ou IFTTT).',
     DOFUS_CB_DESC: 'Interface pour tester des builds sur un personnage Dofus.',
     EPICTURE_DESC: 'Recherche d\'images via Imgur (client mobile).',
     EPITECH_PROJECTS_DESC: 'Regroupement de mes projets à EPITECH pendant mes 3 premières années.',

@@ -18,7 +18,6 @@ export default {
   },
   PROJECTS: {
     AREA_DESC: 'Web application that must implements linking between services such as IFTTT',
-    DESC: 'zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz',
     DOFUS_CB_DESC: 'Interface to try some builds for a Dofus Character.',
     EPICTURE_DESC: 'Photo finder and browsing mobile application (Imgur client)',
     EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects from 1st Year to 3rd year.',

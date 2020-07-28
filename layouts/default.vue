@@ -11,8 +11,8 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
   components: {
-    Header: () => import('@/components/Home/Header.vue'),
-    Footer: () => import('@/components/Home/Footer.vue')
+    Header: () => import('@/components/Layout/Header.vue'),
+    Footer: () => import('@/components/Layout/Footer.vue')
   }
 })
 export default class DefaultLayout extends Vue {}

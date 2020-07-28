@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Additional files
+pages/projects/_projectName.vue
