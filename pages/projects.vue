@@ -6,15 +6,16 @@
       </div>
       <div class="flex flex-wrap -m-4">
         <div
-          v-for="(project, p) in projects"
+          v-for="({ background, description, githubRepo, languages, title}, p) in projects"
           :key="p"
           class="lg:w-1/3 sm:w-full px-4 py-6 mb-2"
         >
             <ProjectCard
-              :background="project.background"
-              :description="project.description"
-              :title="project.title"
-              :languages="project.languages"
+              :background="background"
+              :description="description"
+              :githubRepo="githubRepo"
+              :languages="languages"
+              :title="title"
             />
         </div>
       </div>
@@ -24,7 +25,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-import { Project, projects } from './projects'
+import projects from '@/config/projects'
 
 @Component({
   components: {
@@ -33,12 +34,5 @@ import { Project, projects } from './projects'
 })
 export default class Projects extends Vue {
   private readonly projects: Array<Project> = projects
-
-  /* private openProject(projectName: string): void {
-    this.$router.push({
-      name: 'projects-projectName',
-      params: { projectName }
-    })
-  } */
 }
 </script>

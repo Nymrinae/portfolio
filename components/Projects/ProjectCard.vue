@@ -14,11 +14,14 @@
       style="height: 224px"
     >
       <h2
-        class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
+        class="tracking-widest text-sm title-font font-medium text-green-500 mb-2"
         v-html="languages.join(' | ')"
       />
       <h1 class="title-font text-lg font-medium text-white mb-3" v-html="title" />
       <p class="leading-relaxed text-justify" v-html="$t(description)" />
+      <a :href="`https://github.com/Nymrinae/${githubRepo}`" target="_blank" rel="noopener noreferrer">
+        <img src="@/assets/icons/github.png" class="absolute right-0 bottom-0 mr-3 mb-3" />
+      </a>
     </div>
   </div>
 </template>
@@ -28,9 +31,10 @@ import { Vue, Component, Prop } from 'nuxt-property-decorator'
 
 @Component
 export default class ProjectCard extends Vue {
-  @Prop({ type: String }) readonly background!: string
-  @Prop({ type: String }) readonly title!: string
-  @Prop({ type: Array }) readonly languages!: Array<string>
-  @Prop({ type: String }) readonly description!: string
+  @Prop() readonly background!: string
+  @Prop() readonly description!: string
+  @Prop() readonly githubRepo!: string
+  @Prop() readonly languages!: Array<string>
+  @Prop() readonly title!: string
 }
 </script>

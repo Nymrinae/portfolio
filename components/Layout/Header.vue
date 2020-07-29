@@ -20,12 +20,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Provide } from 'nuxt-property-decorator'
-
-type HeaderLinks = {
-  name: string,
-  path: string
-}
+import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component({
   components: {

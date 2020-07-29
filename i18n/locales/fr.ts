@@ -19,9 +19,9 @@ export default {
   PROJECTS: {
     AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (comme Zapier ou IFTTT).',
     DOFUS_CB_DESC: 'Interface pour tester des builds sur un personnage Dofus.',
-    EPICTURE_DESC: 'Recherche d\'images via Imgur (client mobile).',
+    EPICTURE_DESC: 'Client mobile pour le site d\'hébergement d\'images Imgur.',
     EPITECH_PROJECTS_DESC: 'Regroupement de mes projets à EPITECH pendant mes 3 premières années.',
-    PORTFOLIO_DESC: 'Le portfolio que vous êtes entrain de regarder.',
+    PORTFOLIO_DESC: 'Présentation de moi-même à travers le portfolio que vous êtes entrain de consulter.',
     SERAPHAE_DESC: 'Discord bot multi-usage (fun, modération, musique) créé grâce à Discord.js.',
     TITLE: 'Divers projets que j\'ai réalisé',
   },

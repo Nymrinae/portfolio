@@ -18,10 +18,10 @@ export default {
   },
   PROJECTS: {
     AREA_DESC: 'Web application that must implements linking between services such as IFTTT',
-    DOFUS_CB_DESC: 'Interface to try some builds for a Dofus Character.',
+    DOFUS_CB_DESC: 'Web Interface which allows you to try some builds for a Dofus Character.',
     EPICTURE_DESC: 'Photo finder and browsing mobile application (Imgur client)',
     EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects from 1st Year to 3rd year.',
-    PORTFOLIO_DESC: 'The portfolio you\'re currently reading.',
+    PORTFOLIO_DESC: 'Presentation of myself with the portfolio you\'re currently reading.',
     SERAPHAE_DESC: 'Multi-purpose (moderation, fun, games, music) Discord Bot using Discord.js.',
     TITLE: 'Some things I\'ve built',
   },
