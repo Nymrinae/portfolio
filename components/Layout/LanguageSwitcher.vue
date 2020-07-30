@@ -1,6 +1,6 @@
 <template>
   <span style="cursor: pointer" @click="switchLocale">
-  {{ $t('SWITCH_LANG') }} {{ nonCurrentLang.code.toUpperCase() }}
+    {{ $t('SWITCH_LANG') }} {{ nonCurrentLang.code.toUpperCase() }}
   </span>
 </template>
 
@@ -11,7 +11,7 @@ import { Vue, Component } from 'nuxt-property-decorator'
 export default class LanguageSwitcher extends Vue {
   get nonCurrentLang(): string {
     // @ts-ignore
-    return this.$i18n.locales.find(lang => lang.code !== this.$i18n.locale)
+    return (this.$i18n as any).locales.find(lang => lang.code !== this.$i18n.locale)
   }
 
   private switchLocale(): void {

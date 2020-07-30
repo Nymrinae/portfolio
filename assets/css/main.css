@@ -2,17 +2,3 @@ body::-webkit-scrollbar {
     display: none;
     scrollbar-width: none;
 }
-
-/* Add scroll on mobile && tablets */
-@media screen and (max-width: 1279px) {
-    body {
-        overflow: auto;
-    }
-}
-
-/* Avoid scroll when FHD */
-@media screen and (min-width: 1900px) {
-    body {
-        overflow: hidden;
-    }
-}

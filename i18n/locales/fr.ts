@@ -14,10 +14,10 @@ export default {
   NAV_LINKS: {
     ABOUT: 'A propos',
     CONTACT: 'Contact',
-    PROJECTS: 'Projets'
+    PROJECTS: 'Projects'
   },
   PROJECTS: {
-    AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (comme Zapier ou IFTTT).',
+    AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (comme IFTTT).',
     DOFUS_CB_DESC: 'Interface pour tester des builds sur un personnage Dofus.',
     EPICTURE_DESC: 'Client mobile pour le site d\'hébergement d\'images Imgur.',
     EPITECH_PROJECTS_DESC: 'Regroupement de mes projets à EPITECH pendant mes 3 premières années.',
