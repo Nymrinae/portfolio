@@ -3,10 +3,11 @@ type HeaderLinks = {
   path: string
 }
 
-type NetworksLinks = {
-  icon: string,
+type Network = {
+  content: string,
+  link: string,
   name: string,
-  path: string
+  svgPath: string
 }
 
 type Project = {

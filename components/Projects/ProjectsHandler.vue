@@ -1,5 +1,5 @@
 <template>
-  <section id="projects" class="text-gray-500 bg-gray-900 body-font">
+  <section id="projects" class="text-gray-500 bg-gray-900 body-font pt-24 md:pt-0">
     <div class="container px-5 pt-4 pb-20 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mt-8 mb-4 text-white"> {{ $t('PROJECTS.TITLE') }} </h1>

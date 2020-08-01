@@ -30,6 +30,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js' },
+      { src: 'https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js' }
     ]
   },
   /*
