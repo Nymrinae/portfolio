@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="text-gray-500 bg-gray-900 body-font">
     <div class="max-w-6xl flex items-center h-auto h-screen flex-wrap mx-auto md:mb-0 xl:my-0">
-      <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-gray-900 opacity-75 mx-6 lg:mx-0 mt-12 md:mt-48">
+      <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-gray-900 opacity-75 mx-6 lg:mx-0 mt-24 md:mt-0">
         <div class="p-4 md:p-12 text-center lg:text-left">
           <h1 class="text-3xl font-bold mt-6 pt-0 md:pt-8 lg:pt-0">Sylvain RAYA <br> {{ $t('TITLE') }}</h1>
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
