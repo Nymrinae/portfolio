@@ -1,9 +1,8 @@
 export default {
-  HELLO: 'Hello',
   CONTACT: {
     ADDRESS: 'Address',
     ANSWER: 'You will receive an answer within 24 hours.',
-    CONTACT_ME: 'Contact Me',
+    CONTACT_ME: 'Get in touch',
     EMAIL: 'Email',
     NAME: 'Name',
     PHONE: 'Phone',
@@ -11,6 +10,7 @@ export default {
     SUBJECT: 'Subject',
     WANNA_COLLABORATE: 'Want to collaborate ?'
   },
+  CV: 'Show resume',
   NAV_LINKS: {
     ABOUT: 'About Me',
     CONTACT: 'Contact',
@@ -25,5 +25,6 @@ export default {
     SERAPHAE_DESC: 'Multi-purpose (moderation, fun, games, music) Discord Bot using Discord.js.',
     TITLE: 'Some things I\'ve built',
   },
-  SWITCH_LANG: 'Switch to'
+  SWITCH_LANG: 'Switch to',
+  TITLE: 'Frontend developer'
 }

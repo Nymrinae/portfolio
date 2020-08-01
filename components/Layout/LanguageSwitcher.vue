@@ -17,6 +17,7 @@ export default class LanguageSwitcher extends Vue {
   private switchLocale(): void {
     // @ts-ignore
     this.$i18n.setLocale(this.nonCurrentLang.code)
+    window.scrollTo(0, 0)
   }
 }
 </script>

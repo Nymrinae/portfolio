@@ -5,7 +5,6 @@
     <HeroPresentation />
     <ProjectsHandler />
     <ContactHandler />
-    <Citation />
     <Footer />
   </div>
 </template>

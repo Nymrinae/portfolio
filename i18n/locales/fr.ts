@@ -1,5 +1,4 @@
 export default {
-  HELLO: 'Bonjour',
   CONTACT: {
     ADDRESS: 'Adresse',
     ANSWER: 'Une réponse vous sera envoyée sous 48 heures.',
@@ -11,6 +10,7 @@ export default {
     SUBJECT: 'Sujet',
     WANNA_COLLABORATE: 'Envie de collaborer ?'
   },
+  CV: 'Mon CV',
   NAV_LINKS: {
     ABOUT: 'A propos',
     CONTACT: 'Contact',
@@ -25,5 +25,6 @@ export default {
     SERAPHAE_DESC: 'Discord bot multi-usage (fun, modération, musique) créé grâce à Discord.js.',
     TITLE: 'Divers projets que j\'ai réalisé',
   },
-  SWITCH_LANG: 'Passer en'
+  SWITCH_LANG: 'Passer en',
+  TITLE: 'Développeur Frontend'
 }

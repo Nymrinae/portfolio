@@ -1,22 +1,32 @@
 <template>
   <section id="about" class="text-gray-500 bg-gray-900 body-font">
-    <div class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
-      <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"> {{ $t('HELLO') }}
-          <br class="hidden lg:inline-block">
-        </h1>
-        <p class="mb-8 leading-relaxed text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div class="flex justify-center">
-          <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">W.I.P</button>
-          <button class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">W.I.P</button>
+    <div class="max-w-6xl flex items-center h-auto h-screen flex-wrap mx-auto xl:my-0">
+      <div id="profile" class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-gray-900 opacity-75 mx-6 lg:mx-0">
+        <div class="p-4 md:p-12 text-center lg:text-left">
+          <!-- Image for mobile view-->
+          <div class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" style="background-image: url('https://source.unsplash.com/MP0IUfwrn0A')"></div>
+          <h1 class="text-3xl font-bold pt-8 lg:pt-0">Sylvain RAYA <br> {{ $t('TITLE') }}</h1>
+          <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
+          <p class="pt-8 text-sm">Totally optional short description about yourself, what you do and so on.</p>
+          <div class="pt-12 pb-8">
+            <a href="#contact">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                {{ $t('CONTACT.CONTACT_ME') }}
+              </button>
+            </a>
+            <a>
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                {{ $t('CV') }}
+              </button>
+            </a>
+          </div>
+          <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+          </div>
+          <!-- https://simpleicons.org/ -->
         </div>
       </div>
-      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img
-          class="object-cover object-center rounded"
-          src="https://dummyimage.com/720x600"
-          alt="hero"
-        />
+      <div class="w-full lg:w-2/5">
+        <img src="https://dummyimage.com/350x530" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
       </div>
     </div>
   </section>
@@ -26,12 +36,5 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
-export default class HeroPresentation extends Vue {
-  /* mounted() {
-    // @ts-ignore
-    const height = document.getElementById('navbar').offsetHeight;
-    // @ts-ignore
-    document.getElementById('about').style.paddingTop = height + 'px';
-  } */
-}
+export default class HeroPresentation extends Vue {}
 </script>

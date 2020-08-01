@@ -50,7 +50,7 @@ import { Vue, Component } from "nuxt-property-decorator";
 @Component
 export default class ScrollToTopBtn extends Vue {
   mounted() {
-    window.onscroll = () => {
+    window.onscroll = (): void => {
       const scrollToTopBtn = document.getElementById('scrollToTopBtn')
 
       scrollToTopBtn!.style.transition = 'visibility 0s, opacity 0.5s linear';
