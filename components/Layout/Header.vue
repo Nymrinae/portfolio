@@ -1,11 +1,11 @@
 <template>
   <header id="navbar" class="text-gray-500 bg-gray-900 body-font w-full fixed z-10">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <!-- <a class="flex title-font font-medium items-center  mb-4 md:mb-0" href="/">
+    <div class="container mx-auto flex p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex" href="#about">
         <img src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png" class="w-20 h-20 mr-4 rounded-full" />
-      </a> -->
+      </a>
       <span class="ml-3 text-xl text-green-500"> {{ pseudo }} </span>
-      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 hidden md:flex md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
         <a
           v-for="(link, l) in links"
           :key="l"
@@ -14,7 +14,9 @@
           v-html="$t(link.name)"
         />
       </nav>
-      <SocialNetworks />
+      <div class="hidden md:flex">
+        <SocialNetworks />
+      </div>
     </div>
   </header>
 </template>
