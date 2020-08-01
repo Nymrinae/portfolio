@@ -5,6 +5,7 @@ type HeaderLinks = {
 
 type Network = {
   content: string,
+  color: string,
   link: string,
   name: string,
   svgPath: string

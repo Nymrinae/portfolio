@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-wrap justify-end">
     <a
-      v-for="({name, content, link, svgPath}, n) in networks"
+      v-for="({name, color, content, link, svgPath}, n) in networks"
       :key="n"
       class="link"
       target="_blank"
@@ -10,7 +10,7 @@
       :data-tippy-content="content"
     >
       <svg
-        :class="`pr-6 h-6 fill-current text-gray-600 hover:text-${name.toLowerCase()}`"
+        :class="`pr-6 h-6 fill-current text-gray-600 hover:text-${color}`"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"

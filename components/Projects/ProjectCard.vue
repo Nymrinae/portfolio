@@ -20,7 +20,7 @@
       <h1 class="title-font text-lg font-medium text-white mb-3" v-html="title" />
       <p class="leading-relaxed text-justify" v-html="$t(description)" />
       <a :href="`https://github.com/Nymrinae/${githubRepo}`" target="_blank" rel="noopener noreferrer">
-        <img src="@/assets/icons/github.png" class="absolute right-0 bottom-0 mr-3 mb-3" />
+        <img src="@/assets/icons/github.png" class="absolute right-0 bottom-0 mr-3 mb-3" height="24px" width="24px" />
       </a>
     </div>
   </div>

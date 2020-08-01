@@ -1,4 +1,9 @@
 export default {
+  ABOUT_ME: {
+    SHORT_DESCRIPTION: 'Totally optional short description about yourself, what you do and so on.',
+    TITLE: 'Développeur Frontend',
+    CV: 'Mon CV',
+  },
   CONTACT: {
     ADDRESS: 'Adresse',
     ANSWER: 'Une réponse vous sera envoyée sous 48 heures.',
@@ -10,7 +15,6 @@ export default {
     SUBJECT: 'Sujet',
     WANNA_COLLABORATE: 'Envie de collaborer ?'
   },
-  CV: 'Mon CV',
   NAV_LINKS: {
     ABOUT: 'A propos',
     CONTACT: 'Contact',
@@ -26,5 +30,4 @@ export default {
     TITLE: 'Divers projets que j\'ai réalisé',
   },
   SWITCH_LANG: 'Passer en',
-  TITLE: 'Développeur Frontend'
 }
