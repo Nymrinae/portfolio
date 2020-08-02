@@ -1,7 +1,10 @@
 <template>
   <header id="navbar" class="text-gray-500 bg-gray-900 body-font w-full fixed z-10">
     <div class="container mx-auto flex p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex" href="#about">
+      <a
+        class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex"
+        @click="scrollToPath('about')"
+      >
         <img src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png" class="w-20 h-20 mr-4 rounded-full" />
       </a>
       <span class="ml-3 text-xl text-green-500"> {{ pseudo }} </span>

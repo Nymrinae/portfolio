@@ -13,7 +13,7 @@
               </button>
             </a>
             <a
-              :href="`/cv_${$i18n.locale}.pdf`"
+              :href="`${$i18n.locale === 'fr' ? 'cv' : 'resume'}.pdf`"
               target="_blank"
               rel="noopener noreferrer"
             >
