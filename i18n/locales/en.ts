@@ -16,9 +16,11 @@ export default {
     WANNA_COLLABORATE: 'Want to collaborate ?'
   },
   NAV_LINKS: {
-    ABOUT: 'About Me',
     CONTACT: 'Contact',
-    PROJECTS: 'Projects'
+    EDUCATION: 'Education',
+    EXPERIENCE: 'Experience',
+    PROJECTS: 'Projects',
+    SERVICES: 'Services'
   },
   PROJECTS: {
     AREA_DESC: 'Web application that must implements linking between services such as IFTTT',

@@ -3,6 +3,8 @@
     <ScrollToTopBtn />
     <Header />
     <HeroPresentation />
+    <Experience />
+    <Education />
     <ProjectsHandler />
     <ContactHandler />
     <Footer />

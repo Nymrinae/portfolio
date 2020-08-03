@@ -26,6 +26,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import links from '@/config/links'
 
 @Component({
   components: {
@@ -34,11 +35,7 @@ import { Vue, Component } from 'nuxt-property-decorator'
 })
 export default class Header extends Vue {
   private readonly pseudo: string = '<Nymrinae />'
-  private readonly links: Array<HeaderLinks> = [
-    { name: 'NAV_LINKS.ABOUT', path: 'about' },
-    { name: 'NAV_LINKS.PROJECTS', path: 'projects' },
-    { name: 'NAV_LINKS.CONTACT', path: 'contact' }
-  ]
+  private readonly links: Array<HeaderLinks> = links
 
   private scrollToPath(path: string): void {
     document.getElementById(path)?.scrollIntoView()

@@ -16,9 +16,11 @@ export default {
     WANNA_COLLABORATE: 'Envie de collaborer ?'
   },
   NAV_LINKS: {
-    ABOUT: 'A propos',
     CONTACT: 'Contact',
-    PROJECTS: 'Projects'
+    EDUCATION: 'Éducation',
+    EXPERIENCE: 'Expérience',
+    PROJECTS: 'Projets',
+    SERVICES: 'Services'
   },
   PROJECTS: {
     AREA_DESC: 'Application Web dont le but est de regrouper entre elles plusieurs applications (comme IFTTT).',
