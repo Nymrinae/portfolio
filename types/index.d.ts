@@ -20,3 +20,10 @@ type Project = {
   title: string,
   languages: Array<string>
 }
+
+type MailOptions = {
+  email: string,
+  message: string,
+  name: string,
+  subject: string
+}

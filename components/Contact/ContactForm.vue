@@ -26,6 +26,7 @@
     />
     <button
       class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+      @click="sendMail"
     >
       {{ $t('CONTACT.SEND') }}
     </button>
@@ -35,6 +36,7 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import emailJS from 'emailjs-com'
 
 @Component
 export default class ContactForm extends Vue {
@@ -42,5 +44,28 @@ export default class ContactForm extends Vue {
   private email: string = ''
   private subject: string = ''
   private message: string = ''
+
+  private checkMail(): MailOptions | boolean {
+    const { name, email, subject, message } = this
+
+    if (!name || !email || !subject || !message)
+      return false
+
+    return {
+      name,
+      email,
+      subject,
+      message
+    }
+  }
+
+  private sendMail(): void {
+    const mail = this.checkMail()
+
+    if (mail)
+      emailJS.send('gmail', 'template_y9Sbe0nP', mail, process.env.MAIL_USER_ID)
+    else
+      console.log('error') // add some UI changes here
+  }
 }
 </script>
