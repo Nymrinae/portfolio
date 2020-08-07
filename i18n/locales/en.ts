@@ -15,6 +15,21 @@ export default {
     SUBJECT: 'Subject',
     WANNA_COLLABORATE: 'Want to collaborate ?'
   },
+  EXPERIENCE: {
+    TITLE: 'Companies I\'ve worked with',
+    LCDA: {
+      TITLE: 'Support Technician',
+      TYPE: 'Internship',
+      DESCRIPTION:'Employees assistance / Computers installation',
+      DURATION: '2 months (May 2017 - July 2017)'
+    },
+    TASTYCLOUD: {
+      TITLE: 'Frontend Developer',
+      TYPE: 'Internship',
+      DESCRIPTION: 'Click & Collect Maintenance / Added New Features / Fixed UI bugs and production errors / Developed side applications (such as QR Code Generator)',
+      DURATION: '5 months (April 2020 - August 2020)'
+    }
+  },
   NAV_LINKS: {
     CONTACT: 'Contact',
     EDUCATION: 'Education',

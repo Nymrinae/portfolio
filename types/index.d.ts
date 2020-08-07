@@ -27,3 +27,20 @@ type MailOptions = {
   name: string,
   subject: string
 }
+
+type Logo = {
+  imageSrc: string,
+  websiteSrc?: string,
+  height?: number,
+  width?: number
+}
+
+type Company = {
+  name: string,
+  description: string,
+  duration: string,
+  languages: Array<string>,
+  logo: Logo,
+  title: string,
+  type: string
+}

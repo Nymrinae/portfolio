@@ -63,7 +63,7 @@ export default class ContactForm extends Vue {
     const mail = this.checkMail()
 
     if (mail)
-      emailJS.send('gmail', 'template_y9Sbe0nP', mail, process.env.MAIL_USER_ID)
+      emailJS.send('gmail', 'template_y9Sbe0nP', mail, 'user_0wfnymLSH5FS2pvSIOzUN')
     else
       console.log('error') // add some UI changes here
   }

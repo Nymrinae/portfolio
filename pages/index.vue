@@ -3,9 +3,9 @@
     <ScrollToTopBtn />
     <Header />
     <HeroPresentation />
+    <ProjectsHandler />
     <Experience />
     <Education />
-    <ProjectsHandler />
     <ContactHandler />
     <Footer />
   </div>

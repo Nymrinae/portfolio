@@ -15,6 +15,21 @@ export default {
     SUBJECT: 'Sujet',
     WANNA_COLLABORATE: 'Envie de collaborer ?'
   },
+  EXPERIENCE: {
+    TITLE: 'Expérience',
+    LCDA: {
+      TITLE: 'Technicien Support',
+      TYPE: 'Stage',
+      DESCRIPTION:'Assistance aux employés / Installation d\'ordinateurs',
+      DURATION: '2 mois (Mai 2017 - Juin 2017)'
+    },
+    TASTYCLOUD: {
+      TITLE: 'Développeur Frontend',
+      TYPE: 'Stage',
+      DESCRIPTION: 'Maintenance du Click and Collect / Ajout de fonctionnalités / Résolution de bugs / Développement d\'applications tiers (générateur de QR Code)',
+      DURATION: '5 months (April 2020 - August 2020)'
+    }
+  },
   NAV_LINKS: {
     CONTACT: 'Contact',
     EDUCATION: 'Éducation',

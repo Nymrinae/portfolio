@@ -7,7 +7,7 @@
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
           <p class="pt-8 text-sm"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }} </p>
           <div class="pt-12 pb-8">
-            <a href="#contact">
+            <a @click="scrollTo('contact')">
               <button class="inline-flex w-1/2 md:w-auto mb-4 md:mb-0 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 {{ $t('CONTACT.CONTACT_ME') }}
               </button>
@@ -36,7 +36,10 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+import { scrollTo } from '@/helpers/functions'
 
 @Component
-export default class HeroPresentation extends Vue {}
+export default class HeroPresentation extends Vue {
+  private readonly scrollTo: Function = scrollTo
+}
 </script>
