@@ -15,6 +15,24 @@ export default {
     SUBJECT: 'Sujet',
     WANNA_COLLABORATE: 'Envie de collaborer ?'
   },
+  EDUCATION: {
+    TITLE: 'Education',
+    EPITECH: {
+      DESCRIPTION: 'Préparation au titre RNCP via des projets C/CPP en 2ème année et des projets Web en 3ème année',
+      DURATION: '2018 - Aujourd\'hui',
+      FORMATION: 'PGE - MSc Pro. (RNCP)'
+    },
+    STCHARLES: {
+      DESCRIPTION: 'Découverte du scripting via un jeu codé en LUA, présenté par un site réalisé en HTML et CSS',
+      DURATION: '2014 - 2016',
+      FORMATION: 'BAC Scientifique (option ISN)'
+    },
+    VILGENIS: {
+      DESCRIPTION: 'Découverte du PHP, SQL, JS, UML et C/C++ à travers un projet de simulation de système de sécurité d\'un bâtiment',
+      DURATION: '2016 - 2018',
+      FORMATION: 'BTS SN - Option IR'
+    }
+  },
   EXPERIENCE: {
     TITLE: 'Expérience',
     LCDA: {

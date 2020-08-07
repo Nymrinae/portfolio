@@ -15,19 +15,37 @@ export default {
     SUBJECT: 'Subject',
     WANNA_COLLABORATE: 'Want to collaborate ?'
   },
+  EDUCATION: {
+    TITLE: 'Education',
+    EPITECH: {
+      DESCRIPTION: 'Preparation of RNCP Title through C, CPP projects in 2nd Year and Web projects in 3rd Year (VueJS, React Native, NodeJS)',
+      DURATION: '2018 - Present',
+      FORMATION: 'PGE - MSc Pro. (RNCP)'
+    },
+    STCHARLES: {
+      DESCRIPTION: 'Basic learning of scripting (Game coded in LUA) through a presentation with a website in HTML/CSS',
+      DURATION: '2014 - 2016',
+      FORMATION: 'High School Diploma - Sciences (Speciality in Computer Science)'
+    },
+    VILGENIS: {
+      DESCRIPTION: 'Basic learning of PHP (with SQL), JavaScript, UML, and C/C++ through "Security Management in a building" project.',
+      DURATION: '2016 - 2018',
+      FORMATION: 'Higher National Diploma - Network and Computer Science'
+    }
+  },
   EXPERIENCE: {
-    TITLE: 'Companies I\'ve worked with',
+    TITLE: 'Work experience',
     LCDA: {
       TITLE: 'Support Technician',
       TYPE: 'Internship',
       DESCRIPTION:'Employees assistance / Computers installation',
-      DURATION: '2 months (May 2017 - July 2017)'
+      DURATION: 'May - July 2017'
     },
     TASTYCLOUD: {
       TITLE: 'Frontend Developer',
       TYPE: 'Internship',
       DESCRIPTION: 'Click & Collect Maintenance / Added New Features / Fixed UI bugs and production errors / Developed side applications (such as QR Code Generator)',
-      DURATION: '5 months (April 2020 - August 2020)'
+      DURATION: 'April - August 2020'
     }
   },
   NAV_LINKS: {

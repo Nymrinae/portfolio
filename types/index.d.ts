@@ -44,3 +44,12 @@ type Company = {
   title: string,
   type: string
 }
+
+type School = {
+  name: string,
+  description: string,
+  duration: string,
+  formation: string,
+  location: string,
+  logo: Logo,
+}
