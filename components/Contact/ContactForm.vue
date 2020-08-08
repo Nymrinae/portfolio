@@ -19,9 +19,13 @@
       v-model="subject"
       type="text"
     />
+    <input
+      v-model="honeypot"
+      type="hidden"
+    />
     <textarea
       class="bg-gray-800 rounded border border-gray-700 focus:outline-none h-32 focus:border-indigo-500 text-base text-white px-4 py-2 mb-4 resize-none"
-      placeholder="Message"
+      :placeholder="$t('CONTACT.MESSAGE')"
       v-model="message"
     />
     <button
@@ -30,6 +34,15 @@
     >
       {{ $t('CONTACT.SEND') }}
     </button>
+    <p
+      class="text-xs text-gray-500 text-center mt-3"
+      :class="{
+        'text-red-500': error,
+        'text-green-500': !error
+      }"
+    >
+      {{ $t(confirmationMessage) }}
+    </p>
     <p class="text-xs text-gray-500 text-center mt-3">{{ $t('CONTACT.ANSWER') }}</p>
   </div>
 </template>
@@ -44,11 +57,16 @@ export default class ContactForm extends Vue {
   private email: string = ''
   private subject: string = ''
   private message: string = ''
+  private honeypot: string = ''
+  private confirmationMessage: string = ''
+  private error: Boolean = false
 
-  private checkMail(): MailOptions | boolean {
-    const { name, email, subject, message } = this
+  private checkMail = (mail: string): Boolean => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(mail)
 
-    if (!name || !email || !subject || !message)
+  private checkForm(): MailOptions | boolean {
+    const { name, email, honeypot, message, subject, } = this
+
+    if (honeypot || !name || !this.checkMail(email) || !subject || message.length < 30)
       return false
 
     return {
@@ -60,12 +78,17 @@ export default class ContactForm extends Vue {
   }
 
   private sendMail(): void {
-    const mail = this.checkMail()
+    const mail = this.checkForm()
 
-    if (mail)
+    if (mail) {
       emailJS.send('gmail', 'template_y9Sbe0nP', mail, 'user_0wfnymLSH5FS2pvSIOzUN')
-    else
-      console.log('error') // add some UI changes here
+      this.confirmationMessage = 'CONTACT.SUCCESS'
+      this.error = false
+    }
+    else {
+      this.confirmationMessage = 'CONTACT.ERROR'
+      this.error = true
+    }
   }
 }
 </script>

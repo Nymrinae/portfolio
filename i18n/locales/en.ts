@@ -10,10 +10,13 @@ export default {
     ANSWER: 'You will receive an answer within 24 hours.',
     CONTACT_ME: 'Get in touch',
     EMAIL: 'Email',
+    ERROR: 'An error has occured. Please refill the form correctly.',
+    MESSAGE: 'Message (30 characters minimum)',
     NAME: 'Name',
     PHONE: 'Phone',
     SEND: 'Send',
     SUBJECT: 'Subject',
+    SUCCESS: 'Successfully sent!',
     WANNA_COLLABORATE: 'Want to collaborate ?'
   },
   EDUCATION: {

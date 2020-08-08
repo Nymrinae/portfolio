@@ -8,6 +8,7 @@
       rel="noopener noreferrer nofollow"
       :href="link"
       :data-tippy-content="value || name"
+      :data-tippy-placement="isCard ? 'top' : 'bottom'"
     >
     <svg
         class="pr-6 fill-current text-gray-600 svgLogo"
@@ -34,6 +35,7 @@ import configLogos from '@/config/logos'
 export default class LogoHandler extends Vue {
   @Prop() logos!: Array<string>
   @Prop({ default: false }) small!: Boolean
+  @Prop({ default: false }) isCard!: Boolean
 
   get filteredLogos(): Array<Logo> {
     return this.logos.map(e => configLogos.find(l => l.name === e)!)
@@ -43,7 +45,6 @@ export default class LogoHandler extends Vue {
     // @ts-ignore
     tippy('.logos', {
       arrow: false,
-      placement: 'bottom',
       offset: [-12, 12]
     })
   }

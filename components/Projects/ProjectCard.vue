@@ -1,13 +1,12 @@
 <template>
   <div
     id="card"
-    class="flex relative transition duration-500 ease-in-out transform project"
-    :class="{ 'hover:-translate-y-2': !background }"
+    class="flex relative transition duration-500 ease-in-out transform project hover:-translate-y-2"
   >
     <img
       :src="background"
       alt="gallery"
-      class="absolute inset-0 w-full h-full object-cover object-center"
+      class="absolute inset-0 w-full h-full object-cover object-center rounded"
     />
     <div
       class="px-8 py-8 relative z-10 w-full border-4 border-gray-800 bg-gray-900 hover:opacity-100 transition duration-500 ease-in-out transform"
@@ -20,6 +19,7 @@
         <LogoHandler
           :logos="languages"
           :small="true"
+          :isCard="true"
         />
       </div>
       <a :href="`https://github.com/Nymrinae/${githubRepo}`" target="_blank" rel="noopener noreferrer">
@@ -71,7 +71,7 @@ export default class ProjectCard extends Vue {
   height: calc(100% + var(--borderWidth) * 2);
   width: calc(100% + var(--borderWidth) * 2);
   background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  border-radius: calc(2 * var(--borderWidth));
+  border-radius: 5px;
   z-index: -1;
   animation: animatedgradient 3s ease alternate infinite;
   background-size: 300% 300%;
