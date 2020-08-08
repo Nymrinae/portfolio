@@ -1,6 +1,6 @@
 <template>
   <section id="education" class="text-gray-500 bg-gray-900 body-font">
-    <div class="container px-5 py-12 mx-auto">
+    <div class="container px-5 py-6 mx-auto">
       <div class="flex flex-col text-center w-full mb-10">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mt-8 mb-4 text-white pb-0"> {{ $t('EDUCATION.TITLE') }} </h1>
       </div>
@@ -16,12 +16,12 @@
           <br />
           <p class="leading-relaxed text-base text-justify"> {{ $t(description) }} </p>
         </div>
-        <div class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 flex-shrink-0">
+        <div class="sm:w-32 order-first sm:order-none sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full text-indigo-400 bg-gray-800 hover:bg-gray-700 flex-shrink-0">
           <a
-              :href="logo.websiteSrc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            :href="logo.websiteSrc"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img :src="logo.imageSrc" alt="" :height="logo.height" :width="logo.width" />
           </a>
         </div>

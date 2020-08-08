@@ -1,6 +1,6 @@
 export default {
   ABOUT_ME: {
-    SHORT_DESCRIPTION: 'Totally optional short description about yourself, what you do and so on.',
+    SHORT_DESCRIPTION: '4th Year EPITECH Student based at Paris. I\'m a Frontend developer using mainly VueJS that slowly work to become FullStack Developer.',
     TITLE: 'Frontend Developer',
     CV: 'Show resume',
   },

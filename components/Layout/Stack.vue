@@ -1,19 +1,20 @@
 <template>
   <div class="flex flex-wrap justify-end">
     <a
-      v-for="({ content, link, svgPath}, n) in networks"
+      v-for="({color, name, svgPath}, n) in stack"
       :key="n"
-      class="network"
+      class="language"
       target="_blank"
       rel="noopener noreferrer nofollow"
       :href="link"
-      :data-tippy-content="content"
+      :data-tippy-content="name"
     >
       <svg
-        :class="`pr-6 h-6 fill-current text-gray-600 hover:text-white`"
+        :class="`pr-6 h-8 fill-current text-gray-600 hover:text-white`"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
+        :style="`color: ${color}`"
       >
         <path :d="svgPath"/>
       </svg>
@@ -23,15 +24,15 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
-import networks from '@/config/networks'
+import stack from '@/config/stack'
 
 @Component
-export default class SocialNetworks extends Vue {
-  private readonly networks: Array<Network> = networks
+export default class Stack extends Vue {
+  private readonly stack: Array<Language> = stack
 
   mounted() {
     // @ts-ignore
-    tippy('.network', {
+    tippy('.language', {
       arrow: false,
       placement: 'top',
       offset: [-12, 12]

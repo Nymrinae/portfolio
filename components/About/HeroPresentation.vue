@@ -6,7 +6,10 @@
           <h1 class="text-3xl font-bold mt-6 pt-0 md:pt-8 lg:pt-0">Sylvain RAYA <br> {{ $t('ABOUT_ME.TITLE') }}</h1>
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
           <p class="pt-8 text-sm"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }} </p>
-          <div class="pt-12 pb-8">
+          <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+            <Stack />
+          </div>
+          <div class="pt-12">
             <a @click="scrollTo('contact')">
               <button class="inline-flex w-1/2 md:w-auto mb-4 md:mb-0 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 {{ $t('CONTACT.CONTACT_ME') }}
@@ -21,9 +24,6 @@
                 {{ $t('ABOUT_ME.CV') }}
               </button>
             </a>
-          </div>
-          <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-            <SocialNetworks />
           </div>
         </div>
       </div>
