@@ -20,9 +20,10 @@
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-white text-lg title-font font-medium mb-2">
-            {{ $t(title) }} @<span class="text-green-500">{{ name }} </span>
+            {{ $t(title) }} @<span class="text-green-500" style="padding-left: 4px">{{ name }} </span>
           </h2>
-          <h4 class="text-white text-sm mb-2">{{ $t(type) }} - {{ $t(duration) }} </h4>
+          <h4 class="text-white text-sm mb-2">{{ $t(type) }} </h4>
+          <h4 class="text-white text-sm mb-2">{{ $t(duration) }} </h4>
           <p
             v-for="(task, t) in $t(description).split(' / ')"
             :key="t"

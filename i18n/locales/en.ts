@@ -1,6 +1,7 @@
 export default {
   ABOUT_ME: {
-    SHORT_DESCRIPTION: '4th Year EPITECH Student based at Paris. I\'m a Frontend developer using mainly VueJS that slowly work to become FullStack Developer.',
+    SHORT_DESCRIPTION: '4th Year EPITECH Student based at Paris.',
+    DESCRIPTION: 'I\'m a Frontend developer using mainly VueJS that slowly work to become a FullStack Developer.',
     TITLE: 'Frontend Developer',
     CV: 'Show resume',
   },
@@ -56,12 +57,12 @@ export default {
     SERVICES: 'Services'
   },
   PROJECTS: {
-    AREA_DESC: 'Web application that must implements linking between services such as IFTTT',
-    DOFUS_CB_DESC: 'Web Interface which allows you to try some builds for a Dofus Character.',
-    EPICTURE_DESC: 'Photo finder and browsing mobile application (Imgur client)',
+    AREA_DESC: 'Web application that links services such as IFTTT.',
+    DOFUS_CB_DESC: 'Try some builds for your Dofus character !',
+    EPICTURE_DESC: 'Photo finder and browsing mobile application (Imgur client).',
     EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects from 1st Year to 3rd year.',
     PORTFOLIO_DESC: 'Presentation of myself with the portfolio you\'re currently reading.',
-    SERAPHAE_DESC: 'Multi-purpose (moderation, fun, games, music) Discord Bot using Discord.js.',
+    SERAPHAE_DESC: 'Multi-purpose Discord Bot using Discord.js.',
     TITLE: 'Some things I\'ve built',
   },
   SWITCH_LANG: 'Switch to',

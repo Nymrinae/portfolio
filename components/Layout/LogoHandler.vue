@@ -11,7 +11,10 @@
     >
     <svg
         class="pr-6 fill-current text-gray-600 svgLogo"
-        :class="`${isNetwork ? 'h-6' : 'h-8'}`"
+        :class="{
+          'h-6': isNetwork || small,
+          'h-8': !isNetwork && ! small
+        }"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +33,7 @@ import configLogos from '@/config/logos'
 @Component
 export default class LogoHandler extends Vue {
   @Prop() logos!: Array<string>
+  @Prop({ default: false }) small!: Boolean
 
   get filteredLogos(): Array<Logo> {
     return this.logos.map(e => configLogos.find(l => l.name === e)!)
@@ -45,6 +49,3 @@ export default class LogoHandler extends Vue {
   }
 }
 </script>
-
-<style scoped>
-</style>

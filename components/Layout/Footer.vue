@@ -17,6 +17,6 @@ import { Vue, Component } from 'nuxt-property-decorator'
 
 @Component
 export default class Footer extends Vue {
-  private readonly networks: Array<string> = ['Github', 'LinkedIn', 'Twitter']
+  private readonly networks: Array<string> = ['LinkedIn', 'Github', 'Twitter']
 }
 </script>

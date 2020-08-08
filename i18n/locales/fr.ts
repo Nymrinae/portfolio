@@ -1,6 +1,7 @@
 export default {
   ABOUT_ME: {
-    SHORT_DESCRIPTION: 'Totally optional short description about yourself, what you do and so on.',
+    SHORT_DESCRIPTION: 'Etudiant en 4ème année à EPITECH.',
+    DESCRIPTION: 'Je suis un Développeur Frontend utilisant Vue/Vuetify en technologies principales en quête de devenir un développeur Full Stack',
     TITLE: 'Développeur Frontend',
     CV: 'Mon CV',
   },
