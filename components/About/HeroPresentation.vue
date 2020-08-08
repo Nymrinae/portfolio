@@ -7,7 +7,7 @@
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
           <p class="pt-8 text-sm"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }} </p>
           <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-            <Stack />
+            <LogoHandler :logos="stack" />
           </div>
           <div class="pt-12">
             <a @click="scrollTo('contact')">
@@ -41,5 +41,6 @@ import { scrollTo } from '@/helpers/functions'
 @Component
 export default class HeroPresentation extends Vue {
   private readonly scrollTo: Function = scrollTo
+  private readonly stack: Array<string> = ['JavaScript', 'TypeScript', 'VueJS', 'NuxtJS', 'React Native']
 }
 </script>

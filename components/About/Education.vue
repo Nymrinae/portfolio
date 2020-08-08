@@ -40,6 +40,3 @@ export default class Education extends Vue {
 }
 
 </script>
-
-<style scoped>
-</style>

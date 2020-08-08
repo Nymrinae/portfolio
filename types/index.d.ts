@@ -33,10 +33,22 @@ type MailOptions = {
   subject: string
 }
 
-type Logo = {
+type Image = {
   imageSrc: string,
   websiteSrc?: string,
   height?: number,
+  width?: number
+}
+
+type Logo = {
+  color: string,
+  height?: number,
+  link?: string,
+  name: string,
+  isNetwork?: Boolean,
+  svgPath: string,
+  value?: string,
+  websiteSrc?: string,
   width?: number
 }
 
@@ -45,7 +57,7 @@ type Company = {
   description: string,
   duration: string,
   languages: Array<string>,
-  logo: Logo,
+  logo: Image,
   title: string,
   type: string
 }
@@ -56,5 +68,5 @@ type School = {
   duration: string,
   formation: string,
   location: string,
-  logo: Logo,
+  logo: Image,
 }

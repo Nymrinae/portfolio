@@ -6,7 +6,7 @@
         <LanguageSwitcher />
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <SocialNetworks :top="false" />
+        <LogoHandler :logos="networks" />
       </span>
     </div>
   </footer>
@@ -15,11 +15,8 @@
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 
-@Component({
-  components: {
-    LanguageSwitcher: () => import('./LanguageSwitcher.vue'),
-    SocialNetworks: () => import('./SocialNetworks.vue')
-  }
-})
-export default class Footer extends Vue {}
+@Component
+export default class Footer extends Vue {
+  private readonly networks: Array<string> = ['Github', 'LinkedIn', 'Twitter']
+}
 </script>

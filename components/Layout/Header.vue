@@ -18,7 +18,7 @@
         />
       </nav>
       <div class="hidden md:flex">
-        <SocialNetworks />
+        <LogoHandler :logos="networks" />
       </div>
     </div>
   </header>
@@ -29,14 +29,11 @@ import { Vue, Component } from 'nuxt-property-decorator'
 import links from '@/config/links'
 import { scrollTo } from '@/helpers/functions'
 
-@Component({
-  components: {
-    SocialNetworks: () => import('./SocialNetworks.vue')
-  }
-})
+@Component
 export default class Header extends Vue {
   private readonly pseudo: string = '<Nymrinae />'
   private readonly links: Array<HeaderLinks> = links
+  private readonly networks: Array<string> = ['LinkedIn', 'Github', 'Twitter']
 
   private readonly scrollTo: Function = scrollTo
 }
