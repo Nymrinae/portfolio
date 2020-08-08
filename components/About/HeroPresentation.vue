@@ -5,9 +5,9 @@
         <div class="p-4 md:p-12 text-center lg:text-left">
           <h1 class="text-3xl font-bold mt-6 pt-0 md:pt-8 lg:pt-0">Sylvain RAYA <br> {{ $t('ABOUT_ME.TITLE') }}</h1>
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-          <p class="pt-8 pb-4 text-sm"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }} </p>
-          <p class="text-sm"> {{ $t('ABOUT_ME.DESCRIPTION') }} </p>
-          <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
+          <p class="pt-8 pb-4 text-sm text-justify"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }} </p>
+          <p class="text-sm text-justify"> {{ $t('ABOUT_ME.DESCRIPTION') }} </p>
+          <div class="mt-6 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
             <LogoHandler :logos="stack" />
           </div>
           <div class="pt-12">

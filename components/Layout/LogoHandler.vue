@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap justify-end">
+  <div class="flex flex-wrap justify-end px-6 md:px-0">
     <a
       v-for="({ color, isNetwork, link, name, svgPath, value}, n) in filteredLogos"
       :key="n"
@@ -11,7 +11,7 @@
       :data-tippy-placement="isCard ? 'top' : 'bottom'"
     >
     <svg
-        class="pr-6 fill-current text-gray-600 svgLogo"
+        class="pr-6 mb-6 md:mb-0 fill-current text-gray-600 svgLogo"
         :class="{
           'h-6': isNetwork || small,
           'h-8': !isNetwork && ! small
