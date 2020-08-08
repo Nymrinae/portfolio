@@ -3,19 +3,6 @@ type HeaderLinks = {
   path: string
 }
 
-type Network = {
-  content: string,
-  link: string,
-  name: string,
-  svgPath: string
-}
-
-type Language = {
-  color: string,
-  name: string,
-  svgPath: string
-}
-
 type Project = {
   background: string | null,
   description: string,

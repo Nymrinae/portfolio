@@ -7,7 +7,15 @@
       >
         <img src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png" class="w-20 h-20 mr-4 rounded-full hidden md:flex" />
       </a>
-      <span class="ml-3 text-xl text-green-500"> {{ pseudo }} </span>
+      <div class="flex">
+        <span class="ml-3 text-xl text-green-500 float-left w-4/5 md:w-auto"> {{ pseudo }} </span>
+        <svg
+          class="fill-current h-8 w-8 -mr-4 w-1/5 md:hidden"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
+      </div>
       <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 hidden md:flex md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
         <a
           v-for="(link, l) in links"
