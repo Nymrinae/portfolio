@@ -59,9 +59,9 @@ export default {
   PROJECTS: {
     AREA_DESC: 'Web application that links services such as IFTTT.',
     DOFUS_CB_DESC: 'Try some builds for your Dofus character !',
-    EPICTURE_DESC: 'Photo finder and browsing mobile application (Imgur client).',
-    EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects from 1st Year to 3rd year.',
-    PORTFOLIO_DESC: 'Presentation of myself with the portfolio you\'re currently reading.',
+    EPICTURE_DESC: 'Photo finder and browsing mobile application.',
+    EPITECH_PROJECTS_DESC: 'Collection of my EPITECH Projects (1st to 3rd year)',
+    PORTFOLIO_DESC: 'Presentation of myself through this portfolio.',
     SERAPHAE_DESC: 'Multi-purpose Discord Bot using Discord.js.',
     TITLE: 'Some things I\'ve built',
   },

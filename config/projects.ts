@@ -6,7 +6,7 @@ const projects: Array<Project> = [
     githubRepo: 'EPITECH-Projects',
     name: 'epitech-projects',
     title: 'EPITECH Projects',
-    languages: ['C', 'C++', 'Python', 'VueJS']
+    languages: ['C', 'C++', 'Python', 'NuxtJS', 'TypeScript']
   },
   {
     background: null,
@@ -24,7 +24,7 @@ const projects: Array<Project> = [
     githubRepo: 'EPITECH-Projects/tree/master/AREA',
     name: 'area',
     title: 'Action REAction (AREA)',
-    languages: ['VueJS', 'Vuetify', 'TypeScript']
+    languages: ['VueJS', 'Vuetify', 'NuxtJS', 'TypeScript']
   },
   {
     background: null,
@@ -42,7 +42,7 @@ const projects: Array<Project> = [
     githubRepo: 'dofus-character-builder',
     name: 'dofus-character-builder',
     title: 'Dofus Character Builder',
-    languages: ['VueJS', 'Vuetify']
+    languages: ['VueJS', 'Vuetify', 'NuxtJS']
   },
   {
     background: null,
@@ -51,7 +51,7 @@ const projects: Array<Project> = [
     githubRepo: 'portfolio',
     name: 'portfolio',
     title: 'Portfolio',
-    languages: ['VueJS', 'TailwindCSS']
+    languages: ['VueJS', 'TailwindCSS', 'NuxtJS']
   }
 ]
 
