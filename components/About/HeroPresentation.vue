@@ -21,7 +21,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button class="inline-flex w-1/2 md:w-auto mb-4 md:mb-0 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+              <button class="inline-flex w-1/2 hidden md:inline-block md:w-auto mb-4 md:mb-0 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 {{ $t('ABOUT_ME.CV') }}
               </button>
             </a>

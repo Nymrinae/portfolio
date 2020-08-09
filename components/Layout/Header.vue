@@ -4,7 +4,7 @@
     class="text-gray-500 bg-gray-900 body-font w-full fixed z-10"
     :class="{ 'h-full': show }"
     >
-    <div class="container mx-auto flex p-5 flex-col md:flex-row items-center ">
+    <div class="container mx-auto flex p-5 flex-col md:flex-row items-center">
       <a
         class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex"
         @click="scrollTo('about')"
@@ -12,15 +12,10 @@
         <img src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png" class="w-20 h-20 mr-4 rounded-full hidden md:flex" />
       </a>
       <div class="flex">
-        <span
-          class="ml-3 text-xl text-green-500 float-left w-4/5 md:w-auto"
-          @click="scrollTo('about')"
-        >
-          {{ pseudo }}
-        </span>
+        <MainLogo />
         <svg
           v-if="!show"
-          class="fill-current h-8 w-8 -mr-4 w-1/5 md:hidden"
+          class="fill-current h-8 w-8 -mr-4 my-8 w-1/5 md:hidden"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           @click="openMenu"
@@ -29,7 +24,7 @@
         </svg>
         <svg
           v-if="show"
-          class="fill-current h-6 w-6 -mr-4 w-1/5 md:hidden"
+          class="fill-current h-6 w-6 -mr-4 my-8 w-1/5 md:hidden"
           viewBox="0 0 365 365"
           xmlns="http://www.w3.org/2000/svg"
           @click="closeMenuAndScrollTo"
@@ -38,7 +33,7 @@
         </svg>
       </div>
       <nav
-        class="navigation md:mr-auto md:ml-4 md:py-1 md:pl-4 md:flex md:border-l md:border-gray-700 block md:flex md:flex-wrap items-center text-base justify-center align-middle"
+        class="navigation md:mr-auto md:ml-4 md:py-1 md:pl-4 md:flex block md:flex md:flex-wrap items-center text-base justify-center align-middle"
         :class="{ 'hidden': !show }"
       >
         <ul>
@@ -52,6 +47,15 @@
             />
           </li>
         </ul>
+        <a
+          :href="`${$i18n.locale === 'fr' ? 'cv' : 'resume'}.pdf`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="inline-flex w-1/2 md:hidden mt-8 mb-4 mx-auto py-2 px-6 text-white text-lg bg-indigo-500 border-0 focus:outline-none rounded">
+            {{ $t('ABOUT_ME.CV') }}
+          </button>
+        </a>
       </nav>
       <div class="hidden md:flex">
         <LogoHandler :logos="networks" />
@@ -130,7 +134,7 @@ export default class Header extends Vue {
 
 @media screen and (max-width: 450px) {
   .navigation {
-    margin-top: 50%;
+    margin-top: 30%;
     text-align: center;
   }
 }
