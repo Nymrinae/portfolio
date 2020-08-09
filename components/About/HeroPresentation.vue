@@ -10,11 +10,10 @@
             {{ $t('ABOUT_ME.TITLE') }}
           </h2>
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
-          <div class="mt-8">
+          <div class="mt-8 md:mt-0">
             <img
               src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png"
-              class="w-24 h-24 ml-4 rounded-full md:hidden"
-              style="display: inline-block;"
+              class="w-24 h-24 ml-4 rounded-full inline-block md:hidden "
             />
           </div>
           <p class="pt-8 pb-4 text-sm text-justify"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }}</p>

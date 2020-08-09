@@ -13,7 +13,7 @@
       :data-tippy-placement="isCard ? 'top' : 'bottom'"
     >
     <svg
-        class="pr-6 mb-6 md:mb-4 fill-current text-gray-600 svgLogo"
+        class="pr-6 mb-6 md:mb-2 fill-current text-gray-600 svgLogo"
         :class="{
           'h-6': isNetwork || small,
           'h-8': !isNetwork && ! small
@@ -42,7 +42,6 @@ export default class LogoHandler extends Vue {
   get filteredLogos(): Array<Logo> {
     return this.logos.map(e => configLogos.find(l => l.name === e)!)
   }
-
 
   mounted() {
     // @ts-ignore
