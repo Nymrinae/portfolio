@@ -10,7 +10,7 @@
           <div class="mt-6 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
             <LogoHandler :logos="stack" />
           </div>
-          <div class="pt-12">
+          <div class="pt-6 md:pt-12">
             <a @click="scrollTo('contact')">
               <button class="inline-flex w-1/2 md:w-auto mb-4 md:mb-0 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 {{ $t('CONTACT.CONTACT_ME') }}
