@@ -43,9 +43,6 @@ export default class LogoHandler extends Vue {
     return this.logos.map(e => configLogos.find(l => l.name === e)!)
   }
 
-  get isMobile(): Boolean {
-    return window.innerWidth <= 450
-  }
 
   mounted() {
     // @ts-ignore

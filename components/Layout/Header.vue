@@ -4,7 +4,7 @@
     class="text-gray-500 bg-gray-900 body-font w-full fixed z-10"
     :class="{ 'h-full': show }"
     >
-    <div class="container mx-auto flex p-5 flex-col md:flex-row items-center">
+    <div class="container pr-0 md:pr-5 mx-auto flex flex-col md:flex-row items-center">
       <a
         class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex"
         @click="scrollTo('about')"
@@ -15,7 +15,7 @@
         <MainLogo />
         <svg
           v-if="!show"
-          class="fill-current h-8 w-8 -mr-4 my-8 w-1/5 md:hidden"
+          class="fill-current h-8 w-8 -mr-4 my-8 w-1/5 pr-4 md:hidden"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           @click="openMenu"
@@ -24,7 +24,7 @@
         </svg>
         <svg
           v-if="show"
-          class="fill-current h-6 w-6 -mr-4 my-8 w-1/5 md:hidden"
+          class="fill-current h-6 w-6 -mr-4 my-8 w-1/5 pr-4 md:hidden"
           viewBox="0 0 365 365"
           xmlns="http://www.w3.org/2000/svg"
           @click="closeMenuAndScrollTo"
@@ -41,7 +41,7 @@
             <a
               v-for="({ name, path }, l) in links"
               :key="l"
-              class="navLink mr-5 w-full md:w-auto align-center mb-8 md:mb-auto"
+              class="navLink w-full md:w-auto align-center mb-8 md:mb-auto"
               @click="closeMenuAndScrollTo(path)"
               v-html="$t(name)"
             />
@@ -52,7 +52,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button class="inline-flex w-1/2 md:hidden mt-8 mb-4 mx-auto py-2 px-6 text-white text-lg bg-indigo-500 border-0 focus:outline-none rounded">
+          <button class="inline-flex w-1/2 md:hidden mt-8 mb-4 mx-auto py-2 pl-10 text-white text-lg bg-indigo-500 border-0 focus:outline-none rounded">
             {{ $t('ABOUT_ME.CV') }}
           </button>
         </a>
@@ -134,7 +134,7 @@ export default class Header extends Vue {
 
 @media screen and (max-width: 450px) {
   .navigation {
-    margin-top: 30%;
+    margin-top: 35%;
     text-align: center;
   }
 }

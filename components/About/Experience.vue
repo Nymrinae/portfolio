@@ -21,7 +21,7 @@
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-white text-lg title-font font-medium mb-2">
             {{ $t(title) }}
-            <br v-if="isMobile" />
+            <br class="md:hidden" />
             @<span class="text-green-500" style="padding-left: 4px">{{ name }} </span>
           </h2>
           <h4 class="text-white text-sm mb-2">{{ $t(type) }} </h4>
@@ -45,10 +45,6 @@ import experiences from '@/config/experiences'
 @Component
 export default class Experience extends Vue {
   private readonly experiences: Array<Company> = experiences
-
-  get isMobile(): Boolean {
-    return window.innerWidth <= 450
-  }
 }
 </script>
 

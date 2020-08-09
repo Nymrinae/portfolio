@@ -13,10 +13,10 @@
       viewBox="0 0 1007 185"
       style="enable-background:new 0 0 1007 185;"
       xml:space="preserve"
-      class="w-48 h-24 mr-4"
+      class="w-48 h-16 m-4"
     >
       <style type="text/css">
-        .st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+        .st0{fill:#fff;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
         .st1{fill:none;}
       </style>
       <g>
@@ -116,11 +116,11 @@ export default class MainLogo extends Vue {
 
 <style scoped>
 path {
-  stroke: #35495E;
-  fill: #4fd699;
+  stroke: #5c5c5cbe;
+  fill:  #42B883;
   stroke-dasharray: 1800;
-  opacity: 10;
-  animation: animate 3s cubic-bezier(0, 0.23, 1, .1)
+  opacity: 1;
+  animation: animate 2s cubic-bezier(0, 0.23, 1, .1)
 }
 
 @keyframes animate {
@@ -136,19 +136,18 @@ path {
     stroke-dashoffset: 1800;
   }
 
-  50% {
+  60% {
     opacity: 10;
     fill: none;
     stroke-dashoffset: 1800;
   }
 
-  75% {
+  90% {
     fill: rgba(255, 255, 255, 0);
   }
 
   100% {
     opacity: 10;
-    fill: rgba(79, 192, 141, 1);
     stroke-dashoffset: 0;
   }
 }
