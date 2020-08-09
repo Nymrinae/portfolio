@@ -1,7 +1,7 @@
 <template>
   <header
     id="navbar"
-    class="text-gray-500 bg-gray-900 body-font w-full fixed z-10"
+    class="text-gray-500 bg-gray-900 body-font w-full fixed md:pt-8 z-10"
     :class="{ 'h-full': show }"
     >
     <div class="container pr-0 md:pr-5 mx-auto flex flex-col md:flex-row items-center">
