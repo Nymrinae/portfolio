@@ -6,7 +6,7 @@ const projects: Array<Project> = [
     githubRepo: 'EPITECH-Projects',
     name: 'epitech-projects',
     title: 'EPITECH Projects',
-    languages: ['C', 'C++', 'Python', 'NuxtJS', 'TypeScript']
+    languages: ['C', 'C++', 'Python', 'VueJS', 'NuxtJS', 'TypeScript']
   },
   {
     background: null,

@@ -23,7 +23,7 @@
           class="fill-current h-8 w-8 -mr-4 w-1/5 md:hidden"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
-          @click="show = !show"
+          @click="openMenu"
         >
           <path :d="show ? 'm243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0' : 'M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z'" />
         </svg>
@@ -32,7 +32,7 @@
           class="fill-current h-6 w-6 -mr-4 w-1/5 md:hidden"
           viewBox="0 0 365 365"
           xmlns="http://www.w3.org/2000/svg"
-          @click="show = !show"
+          @click="closeMenuAndScrollTo"
         >
           <path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"/>
         </svg>
@@ -44,11 +44,11 @@
         <ul>
           <li>
             <a
-              v-for="(link, l) in links"
+              v-for="({ name, path }, l) in links"
               :key="l"
               class="navLink mr-5 w-full md:w-auto align-center mb-8 md:mb-auto"
-              @click="scrollTo(link.path); show = false"
-              v-html="$t(link.name)"
+              @click="closeMenuAndScrollTo(path)"
+              v-html="$t(name)"
             />
           </li>
         </ul>
@@ -74,6 +74,19 @@ export default class Header extends Vue {
 
   private readonly scrollTo: Function = scrollTo
 
+  openMenu(): void {
+    document.body.style.overflow = 'hidden'
+    this.show = true
+  }
+
+  closeMenuAndScrollTo(path?: string): void {
+    document.body.style.overflow = 'auto'
+    this.show = false
+
+    if(path)
+      scrollTo(path)
+  }
+
   mounted() {
     window.addEventListener('resize', () => {
       if (window.innerWidth >= 767)
@@ -84,9 +97,6 @@ export default class Header extends Vue {
 </script>
 
 <style scoped>
-.navigation {
-}
-
 .navLink {
   color: #fff;
   text-transform: uppercase;

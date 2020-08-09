@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`flex flex-wrap justify-end ${isCard ? 'px-0' : 'px-4'} md:px-0`"
+    :class="`flex flex-wrap justify-end ${isCard ? 'px-0' : 'px-4'} md:px-0 md:pt-2`"
   >
     <a
       v-for="({ color, isNetwork, link, name, svgPath, value}, n) in filteredLogos"
@@ -13,7 +13,7 @@
       :data-tippy-placement="isCard ? 'top' : 'bottom'"
     >
     <svg
-        class="pr-6 mb-6 md:mb-0 fill-current text-gray-600 svgLogo"
+        class="pr-6 mb-6 md:mb-4 fill-current text-gray-600 svgLogo"
         :class="{
           'h-6': isNetwork || small,
           'h-8': !isNetwork && ! small
@@ -41,6 +41,10 @@ export default class LogoHandler extends Vue {
 
   get filteredLogos(): Array<Logo> {
     return this.logos.map(e => configLogos.find(l => l.name === e)!)
+  }
+
+  get isMobile(): Boolean {
+    return window.innerWidth <= 450
   }
 
   mounted() {
