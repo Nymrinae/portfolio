@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-wrap justify-end px-6 md:px-0">
+  <div
+    :class="`flex flex-wrap justify-end ${isCard ? 'px-0' : 'px-4'} md:px-0`"
+  >
     <a
       v-for="({ color, isNetwork, link, name, svgPath, value}, n) in filteredLogos"
       :key="n"

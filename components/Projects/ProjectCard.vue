@@ -9,7 +9,7 @@
       class="absolute inset-0 w-full h-full object-cover object-center rounded"
     />
     <div
-      class="px-8 py-8 relative z-10 w-full border-4 border-gray-800 bg-gray-900 hover:opacity-100 transition duration-500 ease-in-out transform"
+      class="px-4 md:px-8 py-8 relative z-10 w-full border-4 border-gray-800 bg-gray-900 hover:opacity-100 transition duration-500 ease-in-out transform"
       :class="{ 'opacity-0': background }"
       style="height: 224px"
     >

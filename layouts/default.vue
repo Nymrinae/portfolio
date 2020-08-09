@@ -37,4 +37,11 @@ a {
   box-sizing: border-box;
   margin: 0;
 }
+
+
+@media screen and (max-width: 450px) {
+  html {
+    scroll-padding-top: 48px;
+  }
+}
 </style>
