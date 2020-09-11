@@ -9,7 +9,7 @@
         class="flex title-font font-medium items-center mb-4 md:mb-0 hidden md:flex"
         @click="scrollTo('about')"
       >
-        <img src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png" class="w-20 h-20 mr-4 rounded-full hidden md:flex" />
+        <img src="@/assets/portrait_tasty.jpg" class="w-20 h-20 mr-4 rounded-full hidden md:flex" style="object-fit: cover;" />
       </a>
       <div class="flex">
         <MainLogo />

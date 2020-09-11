@@ -6,14 +6,12 @@
           <h1 class="text-3xl font-bold mt-6 pt-0 md:pt-8 lg:pt-0">
             Sylvain RAYA
           </h1>
-          <h2 class="text-3xl font-bold mt-6 pt-0 md:pt-8 lg:pt-0 hidden md:flex">
-            {{ $t('ABOUT_ME.TITLE') }}
-          </h2>
           <div class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-teal-500 opacity-25"></div>
           <div class="mt-8 md:mt-0">
             <img
-              src="https://cdn.discordapp.com/attachments/656052224689963021/736589688101535844/0.png"
-              class="w-24 h-24 ml-4 rounded-full inline-block md:hidden "
+              src="@/assets/portrait.jpg"
+              class="w-24 h-24 ml-4 rounded-full inline-block md:hidden"
+              style="object-fit: cover"
             />
           </div>
           <p class="pt-8 pb-4 text-sm text-justify"> {{ $t('ABOUT_ME.SHORT_DESCRIPTION') }}</p>
@@ -42,7 +40,7 @@
         </div>
       </div>
       <div class="w-full lg:w-2/5">
-        <img src="https://dummyimage.com/350x530" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block">
+        <img src="@/assets/portrait.jpg" class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block" style="height:530px; width: 350px">
       </div>
     </div>
   </section>
